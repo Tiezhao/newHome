@@ -1,0 +1,403 @@
+@import "~@theme/style.less";
+@import "~@theme/bcolor.less";
+
+.retrieve-slider-layout {
+  overflow: hidden;
+  height: 100%;
+
+  .retrieve-slider-header {
+    display: flex;
+    align-items: center;
+    background-color: #591dbb;
+    border-radius: 5px 0px 0px 0px;
+    width: 400px;
+    height: 40px;
+    justify-content: space-between;
+
+    .title-text {
+      line-height: 40px;
+      margin-left: 20px;
+    }
+
+    >img {
+      width: 16px;
+      height: 16px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .ant-layout {
+    height: calc(100% - 44px);
+
+    .ant-layout-header {
+      padding: 0 10px;
+      background-color: none;
+
+      .ant-menu {
+        border-bottom: 0px;
+        background: none;
+
+        .ant-menu-inline {
+          border-bottom: none
+        }
+
+        .ant-menu-item {
+          &:active {
+            background: transparent;
+          }
+
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #e3dcfb;
+
+          &:after {
+            border: 0px
+          }
+
+          &:hover {
+            font-size: 16px;
+            border-bottom: 1px solid #30fbf8;
+          }
+        }
+
+        .ant-menu-item-selected {
+          border-bottom: 1px solid #30fbf8;
+          font-family: SourceHanSansCN-Bold;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #30fbf8;
+
+          &:after {
+            border: 0px
+          }
+
+          &:hover {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .retrieve-header-custom {
+        font-family: SourceHanSansCN-Regular;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #30fbf8;
+      }
+    }
+
+    .ant-layout-content::-webkit-scrollbar {
+      display: none;
+    }
+
+    .ant-layout-content {
+      overflow-x: hidden;
+      overflow-y: scroll;
+      background-color: #121022;
+
+      .ant-spin-nested-loading {
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+      }
+
+      .ant-spin-blur {
+        &:after {
+          opacity: 0
+        }
+      }
+
+      .retrieve-list-layout {
+        overflow-y: scroll;
+        .retrieve-list-item {
+          height: 130px;
+          padding: 10px;
+          background-color: #161429;
+          border-radius: 3px;
+          border-bottom: 1px solid #2b283a;
+
+          .retrieve-item-info {
+            padding: 10px;
+            &:extend(.row-align-center);
+            // border-bottom: 1px solid #2b283a;
+
+            .retrieve-item-bg {
+              &:extend(.row-center);
+              width: 73px;
+              height: 70px;
+
+              >img {
+                height: 65%;
+              }
+            }
+
+            .retrieve-info {
+              width:100% ;
+              margin-left:20px;
+              .retrieve-item-fname {
+                font-family: SourceHanSansCN-Bold;
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                // line-height: 49px;
+                letter-spacing: 0px;
+                color: #ef2929;
+                display:flex;
+                justify-content: space-between;
+              }
+
+              .retrieve-item-twoname {
+                font-family: SourceHanSansCN-Regular;
+                font-size: 16px;
+                font-weight: normal;
+                letter-spacing: 0px;
+                color: #ffffff;
+              }
+
+              .retrieve-item-threename {
+                font-family: SourceHanSansCN-Regular;
+                font-size: 16px;
+                font-weight: normal;
+                letter-spacing: 0px;
+                color: #e3dcfb;
+              }
+            }
+
+          }
+
+          .retrieve-item-status {
+            // &:extend(.row-center);
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            // border-bottom: 1px solid red;
+            .offer-btn{
+              width: 100%;
+              display: flex;
+              align-items: center;
+              .retrieve-item-style{
+                display: flex;
+                align-items: center;
+                color:#30fbf8 ;
+                >img{
+                 width: 20px;
+                 height: 15px;
+                 margin-right: 10px;
+                }
+              }
+              .click-receive {
+                width: 74px;
+                height: 32px;
+                background-color: #fa2f85;
+                border-radius: 3px;
+                font-family: SourceHanSansCN-Regular;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #ffffff;
+                cursor: pointer;
+                text-align: center;
+                line-height: 32px;
+                margin-left: 50px;
+              }
+            }
+
+            .retrieve-item-types {
+              font-family: SourceHanSansCN-Bold;
+              font-size: 16px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 49px;
+              letter-spacing: 0px;
+              color: #30fbf8;
+            }
+
+            .retrieve-item-typef {
+              font-family: SourceHanSansCN-Bold;
+              font-size: 16px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 49px;
+              letter-spacing: 0px;
+              color: #fa2f85;
+            }
+
+
+            >Button {
+              background: transparent;
+              border: none;
+              color: #fff;
+            }
+          }
+
+        }
+
+      }
+    }
+
+    .ant-layout-footer {
+      padding: 0px;
+      background-color: #161429;
+
+      .retrieve-slider-footer {
+        &:extend(.row-center);
+         cursor: pointer;
+
+        >img {
+          margin-right: 10px;
+        }
+
+        >p {
+          font-family: SourceHanSansCN-Regular;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 102px;
+          letter-spacing: 2px;
+          color: #e3dcfb;
+        }
+      }
+    }
+  }
+
+
+
+  .rarity-common-weapon-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqhs1_history.png');
+
+  }
+
+  .rarity-uncommon-weapon-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqqls_history.png');
+  }
+
+  .rarity-rare-weapon-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqls_history.png');
+  }
+
+  .rarity-mythical-weapon-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqzs_history.png');
+  }
+
+  .rarity-legendary-weapon-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqfs_history.png');
+  }
+
+  .rarity-ancient-weapon-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqhs_history.png');
+  }
+
+  .rarity-contraband-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqjs_history.png');
+  }
+
+  .rarity-common-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqhs1_history.png');
+  }
+
+  .rarity-rare-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqls_history.png');
+  }
+
+  .rarity-mythical-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqzs_history.png');
+  }
+
+  .rarity-legendary-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqfs_history.png');
+  }
+
+  .rarity-ancient-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqhs_history.png');
+  }
+
+  .backpack-steammodal-layout {
+    height: 100%;
+    &:extend(.column-center);
+
+    .backpack-steammodal-logo {
+      &:extend(.row-center);
+
+      >p {
+        color: #fff;
+
+      }
+
+      >img {
+        margin-right: 10px;
+      }
+    }
+
+    >p {
+      color: #fff;
+      margin-top: 5px;
+    }
+
+    .backpack-steam-btn {
+      cursor: pointer;
+      &:extend(.row-center);
+      background-image: url('../../../../assets/images/icon_grzxfz.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 100px;
+      height: 50px;
+      margin-top: 10px;
+
+      >p {
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #ffffff;
+      }
+
+      &:extend(.row-center);
+    }
+  }
+
+}

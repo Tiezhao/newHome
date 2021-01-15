@@ -1,0 +1,138 @@
+@import "~@theme/style.less";
+@import "~@theme/bcolor.less";
+.boxhistory-wrap {
+  height: 150px;
+  &:extend(.row-start);
+  .gun-box {
+    position: absolute;
+    display: flex;
+    .switch {
+      width: 178px;
+      height: 150px;
+      &:extend(.column-center);
+
+      .show {
+         height:120px ;
+        >img {
+           height: 90%;
+        }
+        .weapon-name{
+          font-family:' SourceHanSansCN-Medium';
+          font-size: 16px;
+          font-weight: normal;
+          letter-spacing: 0px;
+          color: #ffffff;
+          text-align: center;
+          >span{
+            font-family:' SourceHanSansCN-Regular';
+            font-size: 16px;
+            font-weight: normal;
+            letter-spacing: 0px;
+            color: #b3b3b3;
+          }
+        }
+      }
+      .hide {
+        display: none;
+      }
+    }
+
+    .switch:hover {
+      .show {
+        display: none;
+
+
+      }
+      .hide {
+        width: 125px;
+        &:extend(.row-center);
+      }
+    }
+  }
+
+
+  .rarity-common-weapon-bg {
+
+    background-size: 178px 150px;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqhs1_history.png');
+
+  }
+
+  .rarity-uncommon-weapon-bg {
+
+    background-size: 178px 150px;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqqls_history.png');
+  }
+
+  .rarity-rare-weapon-bg {
+
+    background-size: 178px 150px;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqls_history.png');
+  }
+
+  .rarity-mythical-weapon-bg {
+
+    background-size: 178px 150px;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqzs_history.png');
+  }
+
+  .rarity-legendary-weapon-bg {
+
+    background-size: 178px 150px;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqfs_history.png');
+  }
+
+  .rarity-ancient-weapon-bg {
+
+    background-size: 178px 150px;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqhs_history.png');
+  }
+
+  .rarity-contraband-bg {
+
+    background-size: 178px 150px;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqjs_history.png');
+  }
+
+  .rarity-common-bg {
+
+    background-size: 178px 150px;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqhs1_history.png');
+  }
+
+  .rarity-rare-bg {
+
+    background-size: 178px 150px;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqls_history.png');
+  }
+
+  .rarity-mythical-bg {
+
+    background-size: 178px 150px;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqzs_history.png');
+  }
+
+  .rarity-legendary-bg {
+
+    background-size: 178px 150px;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqfs_history.png');
+  }
+
+  .rarity-ancient-bg {
+
+    background-size: 178px 150px;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/icon_wqhs_history.png');
+  }
+}

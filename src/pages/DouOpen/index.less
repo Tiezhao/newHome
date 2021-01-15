@@ -1,0 +1,628 @@
+
+.open-model {
+  .anticon-close {
+    > svg {
+      color: #fff;
+    }
+  }
+  .ant-modal-header {
+    background-color: #09081a;
+    border-top: 2px solid #fb2f86;
+    border-bottom: 0px;
+    .ant-modal-title {
+      text-align: center;
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+  .ant-modal-body {
+    padding: 0;
+    .open-model-content {
+      background-color: #161429;
+      .row1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #676391;
+        font-weight: 600;
+        padding: 40px 0;
+        > .names-box {
+          span {
+            color: #fff;
+            margin: 0 4px;
+          }
+        }
+
+        >.money-box {
+          margin-left: 4px;
+        }
+      }
+      .row2 {
+        height: 200px;
+        background: url('../../assets/images/o_bg.png') no-repeat center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .row2-item {
+          .text {
+            font-size: 14px;
+            color: #ffffff;
+          }
+          .header-box {
+            width: 48px;
+            height: 48px;
+            border: solid 1px #ffffff;
+            border-radius: 50%;
+          }
+          &.active {
+            .header-box {
+              width: 68px;
+              height: 68px;
+              border: solid 1px #ffffff;
+              box-shadow: 0 0 30px -6px #fff;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+      .row3 {
+        padding: 53px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .btn1 {
+          width: 226px;
+          height: 52px;
+          line-height: 52px;
+          background-color: #fa2f85;
+          border-radius: 5px;
+          color: #fff;
+          text-align: center;
+          margin-right: 23px;
+          cursor: pointer;
+        }
+        .btn2 {
+          cursor: pointer;
+          width: 140px;
+          height: 52px;
+          line-height: 52px;
+          border-radius: 5px;
+          border: solid 2px #fa2f85;
+          background-color: #161429;
+          color: #fff;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.open-fight-container {
+  .fight-top {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    .big-title {
+      text-align: center;
+      font-size: 30px;
+      letter-spacing: 1px;
+      color: #ffffff;
+      text-shadow: -1px -1px 0px#2ffaf8, 1px 2px 0px #fa2f85;
+      margin-bottom: 23px;
+    }
+    .big-desc {
+      font-size: 16px;
+      color: #e3dcfb;
+      text-align: center;
+    }
+  }
+  .fight-content {
+    max-width: 1390px;
+    margin: 0 auto;
+    .tab {
+      display: flex;
+      border-bottom: 2px solid #d12974;
+      .tab-item {
+        padding: 0 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        &:hover {
+          .back-icon {
+            color: #fff;
+            font-size: 22px;
+          }
+          .back-text {
+            color: #2ffaf8;
+          }
+        }
+        .back-icon {
+          font-size: 16px;
+          color: #2ffaf8;
+          font-weight: 600;
+          transition: all 0.5s ease-out;
+        }
+        .back-text {
+          transition: all 0.5s ease-out;
+          margin-left: 6px;
+          font-size: 16px;
+          line-height: 60px;
+          color: #fff;
+        }
+      }
+      .right-box {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        .url-input {
+          position: absolute;
+          right: 0;
+          top: -52px;
+          width: 280px;
+          height: 30px;
+          background-color: #1a1830;
+          border-radius: 15px;
+          font-size: 14px;
+          color: #52515d;
+          padding: 10px;
+          box-sizing: border-box;
+          color: #fff;
+        }
+        .copy-btn {
+          width: 130px;
+          height: 34px;
+          line-height: 33px;
+          border-radius: 17px;
+          border: solid 2px #2ffaf8;
+          font-size: 14px;
+          color: #ffffff;
+          text-align: center;
+          cursor: pointer;
+          transition: all 0.5s ease-out;
+          &:hover {
+            background-color: #2ffaf8;
+          }
+        }
+      }
+    }
+    .open-main {
+      margin-top: 20px;
+      min-height: 568px;
+      .open-round {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 21px 19px;
+        box-sizing: border-box;
+        height: 66px;
+        background-image: linear-gradient(0deg, #181632 1%, #21224b 100%),
+          linear-gradient(#3c3968, #3c3968);
+
+        .round-left {
+          display: flex;
+          align-items: center;
+          .all-money {
+            font-size: 22px;
+            color: #e3dcfb;
+            margin-right: 19px;
+          }
+        }
+        .round-center {
+          font-size: 18px;
+          color: #fefefe;
+        }
+        .round-right {
+          .await {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            .top-text {
+              font-size: 16px;
+              color: #b375ff;
+              margin-right: 10px;
+            }
+            .top-icon {
+              width: 16px;
+            }
+          }
+          .finish {
+            >.text {
+              font-size: 18px;
+              color: #fff;
+              font-weight: 600;
+            }
+          }
+          .going {
+            display: flex;
+            align-items: center;
+            > p.text {
+              font-size: 16px;
+              color: #fa2f85;
+              margin-right: 17px;
+            }
+            .going-icon {
+              width: 10px;
+              height: 10px;
+              background-color: #fb2f86;
+              border-radius: 50%;
+              animation: going 0.5s ease-out infinite alternate-reverse;
+            }
+          }
+        }
+      }
+      .open-step {
+        height: 114px;
+        padding: 16px 0;
+        background: url('../../assets/images/step_bg.png') no-repeat center;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        margin: 10px 0;
+        .step-wrap {
+          display: flex;
+          position: absolute;
+          left: 50%;
+          .step-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 15px;
+            &.step-acitve {
+              .step-num {
+                border: solid 2px #fa2f85;
+                box-shadow: 0 0 2px 1px #fa2f85;
+                color: #fa2f85;
+              }
+              .step-img-box {
+                transform: scale(1.5);
+              }
+            }
+            &:first-child {
+              .step-num {
+                &::before {
+                  content: "";
+                  width: 35px;
+                  height: 1px;
+                  position: absolute;
+                  left: -37px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  background-color: transparent;
+                }
+              }
+            }
+            &:last-child {
+              .step-num {
+                &::after {
+                  content: "";
+                  width: 35px;
+                  height: 1px;
+                  position: absolute;
+                  left: -37px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  background-color: transparent;
+                }
+              }
+            }
+            .step-num {
+              width: 26px;
+              height: 26px;
+              border: solid 2px #beb8d4;
+              text-align: center;
+              line-height: 22px;
+              color: #e3dcfb;
+              border-radius: 50%;
+              margin-bottom: 10px;
+              position: relative;
+              &::before {
+                content: "";
+                width: 33px;
+                height: 1px;
+                position: absolute;
+                left: -34px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: #beb8d4;
+              }
+              &::after {
+                content: "";
+                width: 35px;
+                height: 1px;
+                position: absolute;
+                right: -37px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: #beb8d4;
+              }
+            }
+            .step-img-box {
+              width: 63px;
+              height: 48px;
+              transition: all 0.3s ease-out;
+              background-size: cover;
+              background-position: center;
+              .step-box {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .open-show {
+        display: flex;
+        position: relative;
+        .game-line {
+          position: absolute;
+          left: 0;
+          top: 150px;
+          transform: translateY(-17px);
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          z-index: 99;
+          .left-icon {
+            width: 30px;
+            height: 34px;
+            transform: rotate(-90deg);
+          }
+          .right-icon {
+            width: 30px;
+            height: 34px;
+            transform: rotate(90deg);
+          }
+          >.line {
+            flex: 1;
+            height: 4px;
+            background-color: #2ffaf8;
+          }
+        }
+        .show-item {
+          flex: 1;
+          margin-right: 6px;
+
+          &:last-child {
+            margin-right: 0px;
+          }
+          .item-top {
+            height: 300px;
+            background-image: linear-gradient(0deg, #161330 0%, #21224d 100%),
+              linear-gradient(#161429, #161429);
+            background-blend-mode: normal, normal;
+            margin-bottom: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .svg-wrap {
+              .move-svg {
+                animation: svg-anite 2000ms linear infinite;
+                transform-origin: 50% 50%;
+              }
+            }
+            .win {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              .win-item {
+                margin-bottom: 38px;
+                .win-text {
+                  font-size: 24px;
+                  color: #2ffaf8;
+                }
+              }
+            }
+
+            .lost-item {
+            }
+          }
+          .item-bottom {
+            height: 96px;
+            background-color: #0f0e2b;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .user-name {
+              position: absolute;
+              color: #fff;
+              left: 5%;
+              top: 10px;
+            }
+            .user-info {
+              position: relative;
+              z-index: 9;
+              .nav-style {
+                width: 48px;
+                height: 48px;
+                margin: 0 auto !important;
+                display: block;
+              }
+            }
+            .progress-wrap {
+              position: absolute;
+              width: 90%;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              height: 17px;
+              background: url("../../assets/images/icon_kdt.png") repeat-x left
+                center;
+              display: flex;
+              justify-content: center;
+              .progress {
+                width: 0%;
+                height: 4px;
+                background-color: #fb2f86;
+                border-radius: 2px;
+                margin-top: 10px;
+                transition: all 0.2s ease-out;
+                &.max {
+                  background-color: #2ffaf8;
+                }
+              }
+            }
+          }
+          .gun-list {
+            display: flex;
+            height: 100%;
+            flex-wrap: wrap;
+            align-content: baseline;
+            .gun-item {
+              height: 0;
+              width: 33.3%;
+              padding-bottom: 33.3%;
+              box-shadow: 0 0 8px 2px #2d2a3c;
+              margin-top: 5px;
+              position: relative;
+              .gun-inner {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                .icon-text {
+                  position: absolute;
+                  right: 5px;
+                  top: 5px;
+                  font-size: 14px;
+                  color: #2ffaf8;
+                }
+                .gun-img {
+                  width: 60%;
+                  margin-top: 10%;
+                  margin: 20% auto 10px;
+                  display: block;
+                }
+                .gun-name {
+                  font-size: 14px;
+                  color: #ffffff;
+                  width: 86%;
+                  margin: 0 auto;
+                  text-align: center;
+                  > span {
+                    color: #b2b2b2;
+                  }
+                }
+                .gold-box {
+                  margin: 0 auto;
+                  width: min-content;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.rarity-common-weapon-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqhs1_history.png');
+
+}
+
+.rarity-uncommon-weapon-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqqls_history.png');
+}
+
+.rarity-rare-weapon-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqls_history.png');
+}
+
+.rarity-mythical-weapon-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqzs_history.png');
+}
+
+.rarity-legendary-weapon-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqfs_history.png');
+}
+
+.rarity-ancient-weapon-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqhs_history.png');
+}
+
+.rarity-contraband-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqjs_history.png');
+}
+
+.rarity-common-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqhs1_history.png');
+}
+
+.rarity-rare-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqls_history.png');
+}
+
+.rarity-mythical-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqzs_history.png');
+}
+
+.rarity-legendary-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqfs_history.png');
+}
+
+.rarity-ancient-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqhs_history.png');
+}
+
+@keyframes going {
+  0% {
+    box-shadow: 0 0 10px 1px #fb2f86;
+  }
+  100% {
+    box-shadow: 0 0 10px 3px #fb2f86;
+  }
+}
+
+@keyframes svg-anite {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}

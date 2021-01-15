@@ -1,0 +1,104 @@
+
+
+.more-box {
+  width: 170px;
+  height: 200px;
+  background-color: #1a1830;
+  border-radius: 5px;
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  &.can {
+    &:hover {
+      .detail {
+        filter: blur(5px);
+      }
+      .zei {
+        transform: scale(1);
+      }
+    }
+  }
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .close-icon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    svg {
+      color: #fff;
+      transition: all 0.3s ease-out;
+      &:hover {
+        transform: scale(1.5);
+        font-weight: 600;
+      }
+    }
+  }
+  .detail {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-out;
+    .gun-wrap {
+      width: 125px;
+      height: 78px;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: contain;
+      .gun-img {
+        max-width: 90px;
+      }
+    }
+    .name {
+      font-size: 16px;
+      color: #ffffff;
+    }
+    .mark-box {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .mark-icon {
+        font-size: 16px;
+        border-radius: 50%;
+        background-color: #2ffaf8;
+        box-shadow: 0px 0px 8px 0px rgba(47, 250, 248, 0.75);
+        svg {
+          color: #171434 !important;
+        }
+      }
+      > input {
+        width: 82px;
+        height: 24px;
+        background-color: #262449;
+        margin: 0 6px;
+        border-bottom: 1px solid #2ffaf8;
+        text-align: center;
+        color: #fff;
+        &:focus {
+          border-bottom: 2px solid #2ffaf8;
+        }
+      }
+    }
+  }
+  .zei {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-out;
+    transform-origin: center;
+    transform: scale(0);
+  }
+}

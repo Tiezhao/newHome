@@ -1,0 +1,306 @@
+.roll-box-layout {
+  width: 1390px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .roll-header {
+    width: 250px;
+    height: 29px;
+    font-family: SourceHanSansCN-Bold;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-shadow: -1px -1px 0px #2ffaf8, 1px 2px 0px #fa2f85;
+  }
+
+  .roll-tabs {
+    display: flex;
+    width: 1390px;
+    margin: 0 auto;
+    margin-top: 55px;
+    align-items: center;
+    height: 59px;
+    border-bottom: 2px solid #fa2f85;
+
+    >div {
+      width: 120px;
+      height: 60px;
+      text-align: center;
+      font-family: SourceHanSansCN-Bold;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 1px;
+      color: #fff;
+      line-height: 60px;
+      cursor: pointer;
+
+    }
+
+    >div:hover {
+      color: #2ffaf8;
+    }
+
+    .selected {
+      color: #2ffaf8;
+      border-bottom: 2px solid #2ffaf8 !important;
+    }
+  }
+
+  .roll-content {
+    width: 1390px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .roll-card {
+      width: 446px;
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      background-color: #1a1830;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-top: 30px;
+      margin-left: 10px;
+      padding-bottom: 20px;
+
+      .roll-card-header {
+        width: 100%;
+        height: 117px;
+        overflow: hidden;
+        background-size: 100% 117px;
+        background-repeat: no-repeat;
+        padding: 20px;
+
+        >div {
+          text-align: left;
+          margin-top: 10px;
+          font-family: SourceHanSansCN-Medium;
+          font-size: 18px;
+        }
+      }
+
+      .roll-card-info {
+        display: flex;
+
+        .roll-card-weapon {
+          width: 109px;
+          height: 110px;
+          background-repeat: no-repeat;
+          background-size: 109px 110px;
+          background-position: center;
+          margin-left: 16px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          >img {
+            width: 84px;
+            //  height: 46px;
+          }
+        }
+
+
+
+      }
+      .roll-card-dec{
+        display: flex;
+        width: 100%;
+        .roll-card-item {
+         padding: 0 16px;
+          width: 100%;
+          >div {
+            text-align: left;
+          }
+
+          .roll-card-room {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            .roll-room-price {
+              >span {
+                color: #2ffaf8;
+              }
+            }
+          }
+          .roll-room-footer {
+            display: flex;
+            margin-top: 10px;
+            justify-content: space-between;
+           >div{
+             display: flex;
+             align-items: center;
+            >img {
+              width: 22px;
+              height: 20px;
+              margin-right: 15px;
+            }
+            >span{
+              color: #2ffaf8;
+            }
+           }
+
+          }
+        }
+      }
+      .roll-card-btn {
+        width: 406px;
+        height: 30px;
+        background-color: #fa2f85;
+        border-radius: 3px;
+        margin: 0 auto;
+        margin-top: 30px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .roll-footer-page {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    .ant-pagination.mini {
+
+      .ant-pagination-prev,
+      .ant-pagination-next,
+      .ant-pagination-item {
+        min-width: 25px;
+        height: 25px;
+        margin: 0 5px;
+        line-height: 25px;
+
+        a {
+          color: #fff;
+          font-size: 18px;
+          line-height: 25px;
+          padding: 0;
+        }
+      }
+
+      .ant-pagination-item-active {
+        font-weight: 500;
+        background: #4e4f5e;
+        border-color: transparent;
+      }
+
+      .ant-pagination-item:hover {
+        font-weight: 500;
+        background: #4e4f5e;
+        border-color: transparent;
+      }
+
+      .ant-pagination-prev,
+      .ant-pagination-next {
+        background: #4e4f5e;
+
+        .ant-pagination-item-link {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+
+      .ant-pagination-disabled {
+        background: none;
+      }
+    }
+  }
+
+  .rarity-common-weapon-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqhs1.png');
+
+  }
+
+  .rarity-uncommon-weapon-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqqls.png');
+  }
+
+  .rarity-rare-weapon-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqls.png');
+  }
+
+  .rarity-mythical-weapon-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqzs.png');
+  }
+
+  .rarity-legendary-weapon-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqfs.png');
+  }
+
+  .rarity-ancient-weapon-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqhs.png');
+  }
+
+  .rarity-contraband-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqjs.png');
+  }
+
+  .rarity-common-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqhs1.png');
+  }
+
+  .rarity-rare-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqls.png');
+  }
+
+  .rarity-mythical-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqzs.png');
+  }
+
+  .rarity-legendary-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqfs.png');
+  }
+
+  .rarity-ancient-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqhs.png');
+  }
+
+}

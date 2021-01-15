@@ -1,0 +1,57 @@
+
+// import appStore from '@stores/appStore';
+
+export default {
+  icon_dlsteam: require('@images/icon_dlsteam.png'),
+  icon_logo: require('@images/icon_logo.png'),
+  gun: require('@img/gun.png'),
+  bg1: require('@img/bg1.jpg'),
+  icon_bbtb: require('@images/icon_bbtb.png'),
+  icon_qhtb: require('@images/icon_qhtb.png'),
+  icon_qhzsgb: require('@images/icon_qhzsgb.png'),
+  icon_zfb: require('@images/icon_zfb.png'),
+  icon_zzdd: require('@images/icon_zzdd.png'),
+  icon_zzdx: require('@images/icon_zzdx.png'),
+  icon_dxdt: require('@images/icon_dxdt.png'),
+  icon_hsrt: require('@images/icon_hsrt.png'),
+  icon_jrzx: require('@images/icon_jrzx.png'),
+  o_bg: require('@images/o_bg.png'),
+  icon_$: require('@images/icon_$.png'),
+  icon_tjwj: require('@images/icon_tjwj.png'),
+  icon_kdt: require('@images/icon_kdt.png'),
+  icon_zbcg: require('@images/icon_zbcg.png'),
+  icon_wx: require('@images/icon_wx.png'),
+  icon_zfdj: require('@images/icon_zfdj.png'),
+  icon_djyssz: require('@images/icon_djyssz.png'),
+  icon_kxzzs: require('@images/icon_kxzzs.png'),
+  // 推广
+  icon_tglj: require('@images/icon_tglj.png'),
+  icon_tgm: require('@images/icon_tgm.png'),
+  icon_fxtglj: require('@images/icon_fxtglj.png'),
+  icon_hdjl: require('@images/icon_hdjl.png'),
+  icon_hyczcg: require('@images/icon_hyczcg.png'),
+  icon_tgfh: require('@images/icon_tgfh.png'),
+  icon_payments: require('@images/icon_payments.png'),
+  icon_kxzzx: require('@images/icon_kxzzx.png'),
+  icon_kxslxz: require('@images/icon_kxslxz.png'),
+  icon_kxslxz2: require('@images/icon_kxslxz2.png'),
+  icon_hsbj: require('@images/icon_hsbj.png'),
+  icon_kzt: require('@images/icon_kzt.png'),
+  icon_kftb: require('@images/icon_kftb.png'),
+  // 红包
+  icon_dkhbbj: require('@images/icon_dkhbbj.png'),
+  icon_hbbj: require('@images/icon_hbbj.png'),
+  icon_hbgzbj: require('@images/icon_hbgzbj.png'),
+  icon_gglb: require('@images/icon_gglb.png'),
+  //
+  icon_gou: require('@images/icon_gou.png'),
+  banner: require('@images/banner.jpg'),
+  banner1: require('@images/banner1.jpg'),
+  actbg: require('@images/actbg.jpg'),
+  icon_wqfs: require('@images/icon_wqfs.png'),
+  icon_rofftb: require('@images/icon_rofftb.png'),
+  icon_rofft: require('@images/icon_rofft.png'),
+  bj_dhl: require('@images/bj_dhl.png'),
+};
+
+

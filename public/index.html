@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no" />
+  <meta name="theme-color" content="#141225" />
+  <meta name="google" content="notranslate" />
+  <meta name="description"
+    content="最好玩的douskins,能取回的开箱网.品质卓越的douskins开箱平台，douskins抽奖网站，安全可靠。立即注册领取douskins奖金，douskins全新箱子，一秒取回。网站玩法：dou箱，盲盒，免费宝箱，你也能成为欧皇" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="renderer" content="webkit" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <title>最好玩的douskins开箱网,CS:GO开箱首选，来douskins成为欧气满满的欧皇</title>
+
+  <script>
+
+
+    if (/(iPhone|iPod|iOS|Android)/i.test(navigator.userAgent)) {
+      let referrer = ''
+      var url = window.location.href
+
+      if (url.indexOf('douinvitecode') !== -1) {
+        const str = url.substr(1);
+        const strs = str.split('douinvitecode=');
+        referrer = strs[1]
+      }
+
+      if (location.href.indexOf('tester') !== -1) {
+        if (referrer) {
+          window.location.href = `https://tester.setmoo.com/m?douinvitecode=${referrer}`
+        } else {
+          window.location.href = `https://tester.setmoo.com/m`
+        }
+
+      } else if (location.href.indexOf('douskins') !== -1) {
+        if (referrer) {
+          window.location.href = `https://m.douskins.com/?douinvitecode=${referrer}`
+        } else {
+          window.location.href = `https://m.douskins.com`
+        }
+      }
+
+    } else {
+
+      let referrer = ''
+      var url = window.location.href
+
+      if (url.indexOf('douinvitecode') !== -1) {
+        const str = url.substr(1);
+        const strs = str.split('douinvitecode=');
+        referrer = strs[1]
+      }
+      var protocolStr = document.location.protocol;
+
+      if (protocolStr === "http:") {
+        if (location.href.indexOf('douskins') !== -1) {
+          if (referrer) {
+            window.location.href = `https://www.douskins.com/?douinvitecode=${referrer}`
+          } else {
+            window.location.href = `https://www.douskins.com`
+          }
+        }
+      }
+
+    }
+
+
+  </script>
+
+  <style>
+    /* 初始化样式 */
+    body {
+      margin: 0;
+      font-family: Roboto, "PT Sans", Arial, Tahoma, Verdana, sans-serif !important;
+    }
+
+    code {
+      font-family: Roboto, SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+    }
+
+    html,
+    body,
+    #root {
+      width: 100%;
+      height: 100%;
+      overflow-y: overlay;
+      overflow-x: hidden;
+
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+
+</html>

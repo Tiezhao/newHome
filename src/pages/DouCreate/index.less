@@ -1,0 +1,456 @@
+.add-box-model {
+  .anticon svg {
+    color: #fff;
+    transition: all 0.3s ease-out;
+    &:hover {
+      transform: scale(1.5);
+      font-weight: 600;
+    }
+  }
+  .ant-modal-header {
+    background-color: #121022;
+    border-top: 2px solid #c51ea4;
+    border-bottom: none;
+
+    .ant-modal-title {
+      text-align: center;
+      font-size: 22px;
+      color: #ffffff;
+    }
+  }
+  .ant-modal-body {
+    padding: 0;
+  }
+  .add-content {
+    background-color: #161429;
+    padding: 20px 30px 30px;
+    .add-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+
+      .t-left {
+        font-size: 16px;
+        color: #ffffff;
+        display: flex;
+        > p {
+          color: #30faf8;
+          font-size: 18px;
+        }
+      }
+      .t-right {
+        width: 200px;
+        height: 50px;
+        background-color: #262449;
+        border-radius: 5px 5px 0px 0px;
+        position: relative;
+        > input {
+          padding: 0 14px;
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+          border-bottom: 2px solid transparent;
+          transition: all 0.3s ease-out;
+          color: #fff;
+          &:focus {
+            border-bottom: 2px solid #c51ea4;
+          }
+        }
+        .search-icon {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 14px;
+        }
+      }
+    }
+    .add-center-wrap {
+      width: 740px;
+      height: 650px;
+      background-color: #121022;
+      border-radius: 5px;
+      padding: 10px;
+      box-sizing: border-box;
+      overflow: scroll;
+
+      &::-webkit-scrollbar-thumb {
+        opacity: 0.5;
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#62bff8),
+          to(#025f99)
+        );
+        background-image: linear-gradient(#62bff8 0%, #025f99 100%);
+        border-radius: 5px;
+      }
+      .add-center {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap
+      }
+    }
+    .finish-btn {
+      margin: 26px auto 0;
+    }
+  }
+}
+
+.box-spin {
+  background-color: #000;
+}
+
+.box-info-model {
+  .anticon svg {
+    color: #fff;
+    transition: all 0.3s ease-out;
+    &:hover {
+      transform: scale(1.5);
+      font-weight: 600;
+    }
+  }
+  .ant-modal-header {
+    background-color: #121022;
+    border-top: 2px solid #c51ea4;
+    border-bottom: none;
+
+    .ant-modal-title {
+      text-align: center;
+      font-size: 22px;
+      color: #ffffff;
+    }
+  }
+  .ant-modal-body {
+    padding: 0;
+  }
+  .info-content {
+    background-color: #161429;
+    padding: 20px 30px 30px;
+
+    .info-center-wrap {
+      width: 740px;
+      height: 650px;
+      background-color: #121022;
+      border-radius: 5px;
+      padding: 10px;
+      box-sizing: border-box;
+      overflow: scroll;
+
+      &::-webkit-scrollbar-thumb {
+        opacity: 0.5;
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#62bff8),
+          to(#025f99)
+        );
+        background-image: linear-gradient(#62bff8 0%, #025f99 100%);
+        border-radius: 5px;
+      }
+      .gun-list {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        align-content: baseline;
+        .gun-item {
+          width: 25%;
+          height: 155px;
+          box-shadow: 0 0 2px 1px #2d2a3c;
+          margin-top: 5px;
+          position: relative;
+          .gun-inner {
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 170px;
+            height: 155px;
+            position: absolute;
+            .icon-text-l {
+              position: absolute;
+              left: 5px;
+              top: 5px;
+              font-size: 14px;
+              .probability {
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #e3dcfb;
+    
+              }
+    
+              .rate {
+                font-weight: normal;
+                letter-spacing: 0px;
+                color: #2ffaf8;
+    
+              }
+            }
+            .icon-text-r {
+              position: absolute;
+              right: 5px;
+              top: 5px;
+              font-size: 14px;
+              color: #2ffaf8;
+            }
+            .gun-img {
+              width: 60%;
+              margin-top: 10%;
+              margin: 20% auto 10px;
+              display: block;
+            }
+            .gun-name {
+              font-size: 14px;
+              color: #ffffff;
+              width: 86%;
+              margin: 0 auto;
+              text-align: center;
+              > span {
+                color: #b2b2b2;
+              }
+            }
+          }
+        }
+      }
+    }
+    .finish-btn {
+      margin: 26px auto 0;
+    }
+  }
+}
+
+.creat-fight-container {
+  .fight-top {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    .big-title {
+      text-align: center;
+      font-size: 30px;
+      letter-spacing: 1px;
+      color: #ffffff;
+      text-shadow: -1px -1px 0px#2ffaf8, 1px 2px 0px #fa2f85;
+      margin-bottom: 23px;
+    }
+    .big-desc {
+      font-size: 16px;
+      color: #e3dcfb;
+      text-align: center;
+    }
+  }
+  .fight-content {
+    max-width: 1390px;
+    margin: 0 auto;
+    .tab {
+      display: flex;
+      border-bottom: 2px solid #d12974;
+      .tab-item {
+        padding: 0 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        &:hover {
+          .back-icon {
+            color: #fff;
+            font-size: 22px;
+          }
+          .back-text {
+            color: #2ffaf8;
+          }
+        }
+        .back-icon {
+          font-size: 16px;
+          color: #2ffaf8;
+          font-weight: 600;
+          transition: all 0.5s ease-out;
+        }
+        .back-text {
+          transition: all 0.5s ease-out;
+          margin-left: 6px;
+          font-size: 16px;
+          line-height: 60px;
+          color: #fff;
+        }
+      }
+    }
+    .creat-main {
+      .create-room {
+        margin-top: 11px;
+        margin-bottom: 20px;
+        padding: 20px 60px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        background-color: #23183c;
+
+        .item {
+          &:nth-child(2) {
+            margin-left: 50px;
+          }
+          &:nth-child(3) {
+            margin-left: 600px;
+          }
+          &:nth-child(4) {
+            margin-left: 50px;
+          }
+          .item-title {
+            color: #fff;
+          }
+          .i-content {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .self-switch {
+              width: 70px;
+              &.ant-switch-checked {
+                background-color: #841a47;
+              }
+            }
+            .num {
+              width: 40px;
+              height: 22px;
+              line-height: 21px;
+              border-radius: 14px;
+              border: solid 1px #fb2f86;
+              text-align: center;
+              color: #fefefe;
+              font-size: 14px;
+              margin-right: 20px;
+              cursor: pointer;
+              &.active,
+              &:hover {
+                background-color: #fb2f86;
+                transition: all 0.3s ease-out;
+              }
+            }
+            .round {
+              color: #2ffaf8;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .box-content {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 670px;
+        .check-gun-box {
+          width: 200px !important;
+          height: 250px !important;
+          background-color: #262449 !important;
+          border-radius: 5px !important;
+          margin-right: 10px !important;
+        }
+        .add-box {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          width: 200px;
+          height: 250px;
+          background-color: #262449;
+          border-radius: 5px;
+          .add-icon {
+            background-color: #4f4d80;
+            color: #262449;
+            font-size: 60px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+          }
+          .add-text {
+            color: #e3dcfb;
+          }
+        }
+      }
+    }
+  }
+}
+
+.rarity-common-weapon-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqhs1_history.png');
+
+}
+
+.rarity-uncommon-weapon-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqqls_history.png');
+}
+
+.rarity-rare-weapon-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqls_history.png');
+}
+
+.rarity-mythical-weapon-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqzs_history.png');
+}
+
+.rarity-legendary-weapon-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqfs_history.png');
+}
+
+.rarity-ancient-weapon-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqhs_history.png');
+}
+
+.rarity-contraband-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqjs_history.png');
+}
+
+.rarity-common-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqhs1_history.png');
+}
+
+.rarity-rare-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqls_history.png');
+}
+
+.rarity-mythical-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqzs_history.png');
+}
+
+.rarity-legendary-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqfs_history.png');
+}
+
+.rarity-ancient-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/icon_wqhs_history.png');
+}

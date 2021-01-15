@@ -1,0 +1,115 @@
+@import "~@theme/style.less";
+@import "~@theme/bcolor.less";
+
+.layout-footer{
+  width: 100%;
+  bottom: 0px;
+  background-color: #1a1c24;
+
+  z-index: 9;
+  &:extend(.column);
+  .layout-footer-box {
+    &:extend(.row-center);
+    .layout-footer-img{
+      &:extend(.row-start);
+      >img{
+        padding: 0 5px 0 5px;
+      }
+      >a{
+        >img {
+          width: 170px;
+          height: 36px;
+          padding: 0 20px 0 20px;
+        }
+      }
+    }
+
+    .footer-freeimg{
+      width: 96px;
+      height: 21px;
+    }
+
+
+    .ant-menu {
+      background: transparent;
+
+    }
+    .ant-menu-horizontal{
+      border-bottom: none;
+      >.ant-menu-item:hover{
+        border-bottom: none;
+        color:#ffd617;
+      }
+    }
+    .ant-menu-item {
+      color: #fff;
+      transition: none;
+      margin: 0 20px 0 20px;
+      >img{
+        margin-right: 5px;
+        margin-bottom: 4px;
+      }
+      >div {
+        &:extend(.row-start);
+        >img {
+          &:extend(.charge-img-size);
+        }
+      }
+    }
+    .ant-menu-item-active{
+      border-bottom: none;
+    }
+    .ant-menu-inline{
+      border-right: 1px solid #243245;
+    }
+
+    .ant-menu-item-selected{
+      color:#fff;
+      border-bottom: none;
+      &:after{
+        border-bottom: none;
+      }
+    }
+  }
+  .layout-about{
+    flex: 1;
+    &:extend(.row-start);
+    padding: 30px;
+    background-color: #0a0c15;
+    opacity: 0.9;
+    justify-content: center;
+    .layout-about-info{
+      &:extend(.column-start);
+      flex: .2;
+      a{
+        color: #35b6d3;
+        font-size: 14px;
+        font-family: Roboto, "PT Sans", Arial, Tahoma, Verdana, sans-serif;
+        &:nth-child(1){
+          font-family: SourceHanSansCN-Medium;
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 25px;
+          letter-spacing: 0px;
+          color: #60a5ff;
+
+        }
+        &:nth-child(2){
+          font-family: SourceHanSansCN-Regular;
+          font-size: 10px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 13px;
+          letter-spacing: 0px;
+          color: #737e8e;
+        }
+      }
+    }
+    .layout-about-img{
+      flex:.6;
+      &:extend(.row-center);
+
+    }
+  }
+}

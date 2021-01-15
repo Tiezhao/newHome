@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  s86hp:
+    image: registry.cn-shanghai.aliyuncs.com/gb-devteam/com-86skins/s86hp-prod:latest
+    networks:
+      - net-overlay-ec
+    ports:
+      - "38282:80"
+    # volumes:
+    #   - /data/var/s86hp-prod/logs:/var/logs
+    deploy:
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints:
+          - node.labels.env == prod
+          - node.labels.s86hp == 1
+      replicas: 1
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "20"
+networks:
+  net-overlay-ec:
+    external: true

@@ -1,0 +1,451 @@
+@import "~@theme/style.less";
+@import "~@theme/bcolor.less";
+
+.backpack-layout {
+  .backpack-content-none{
+    margin-left: 350px;
+    margin-top: 50px;
+
+  }
+  .backpack-content-body{
+    display: flex;
+    flex-wrap: wrap;
+    .backpack-card {
+      margin-left: 21px;
+      margin-top: 19px;
+      width: 224px;
+      height: 300px;
+      background-color: #161429;
+      border-radius: 3px;
+      border: solid 1px #2d2a3c;
+
+      flex-direction: column;
+      display: flex;
+      .backpack-card-top{
+        &:extend(.column-center);
+        height: 179px;
+        position: relative;
+        >img {
+          height: 80%;
+        }
+        >p{
+          font-family: SourceHanSansCN-Bold;
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #ffffff;
+          text-align: center;
+        }
+        .backpack-quality{
+          position: absolute;
+          top:5px;
+          right: 10px;
+          color: #2ffaf8;
+        }
+      }
+      .backpack-card-bottom{
+        &:extend(.column-center);
+        .sell-btn {
+          .main-button(156px,35px);
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          >span{
+            font-family: SourceHanSansCN-Regular;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #ffffff;
+          }
+        }
+        .get-btn {
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .dis-button(156px,35px);
+        }
+      }
+    }
+  }
+  .backpack-info-box{
+    padding: 18px;
+    &:extend(.row-between);
+    flex: 1;
+    .ant-spin-nested-loading{
+
+      flex: .6;
+      .backpack-link-layout{
+        background-color: #161429;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+        padding: 20px;
+        .link-input{
+          flex: .8;
+          >input{
+            background: transparent;
+            border: 0px;
+            border-bottom: 1px solid #2d2a3c;
+            color: #fff;
+
+          }
+
+
+        }
+
+        .link-input-form{
+          flex: 1;
+          .link-form{
+            input{
+              &:nth-child(1){
+                border: 0px;
+                border-bottom: 1px solid #2d2a3c;
+                color: #fff;
+                width: 65%;
+                height: 44px;
+                margin-left: 14px;
+                &:focus{
+                  outline: none;
+                  border-bottom: 1px solid #2d2a3c !important;
+                  font-size: 14px;
+                }
+              }
+              &:nth-child(2){
+                border: 0px;
+                margin-left: 60px;
+                color: #fff;
+              }
+            }
+
+          }
+        }
+        .link-info{
+          &:extend(.row-start);
+          svg{
+            color: #fff;
+            margin-right: 10px;
+            font-size: 20px;
+          }
+          >p{
+            font-family: SourceHanSansCN-Regular;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #e3dcfb;
+
+          }
+        }
+        .link-btn{
+          margin-bottom: 28px;
+          background-repeat: no-repeat;
+          width: 70px;
+          height: 34px;
+          background-image: url('../../assets/images/icon_grzxfz.png');
+          >p{
+            font-family: SourceHanSansCN-Regular;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 5px;
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+
+    .backpack-info-user{
+      flex: .4;
+      padding: 10px;
+      &:extend(.row-between);
+      background-color: #161429;
+      height: 120px;
+      .info-box {
+        &:extend(.row-start);
+        flex: .7;
+        overflow: hidden;
+        background-color: #161429;
+        .info-item {
+          &:extend(.column-start);
+          margin-right: 10px;
+          >p {
+            margin-right: 10px;
+            font-family: SourceHanSansCN-Regular;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 20px;
+            font-stretch: normal;
+            color: #ffffff;
+          }
+          span{
+            font-family: SourceHanSansCN-Regular;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #e3dcfb;
+          }
+          >img {
+            margin: 0 10px 0 10px;
+          }
+        }
+        .info-img{
+          margin-top: 10px;
+          background-size: 80%;
+          background-repeat: no-repeat;
+          background-position-y: 4px;
+          background-image: url('../../assets/images/icon_tx.png');
+          height: 60px;
+          width: 52px;
+          &:extend(.row-center);
+        }
+
+        >Button {
+          margin-right: 10px;
+          .main-button(70px, 30px);
+          font-family: AdobeHeitiStd-Regular;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #1d2235;
+
+        }
+
+        .avatar-box {
+          margin-right: 10px;
+          background: #fde3cf;
+          color: #f56a00;
+
+        }
+
+        >a {
+          font-size: 11px;
+          color: #e3dcfb;
+        }
+      }
+      .info-charge {
+      &:extend(.row-center);
+       width: 70px;
+       height: 34px;
+       background-image: url('../../assets/images/icon_xgan.png');
+       background-repeat: no-repeat;
+       font-family: SourceHanSansCN-Regular;
+       font-size: 16px;
+       font-weight: normal;
+       font-stretch: normal;
+       letter-spacing: 0px;
+       color: #121022;
+       cursor: pointer;
+      }
+    }
+    >Button {
+      .main-button(100px, 44px);
+      font-family: AdobeHeitiStd-Regular;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 0px;
+    }
+
+  }
+  .backpack-page{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    .ant-pagination.mini {
+      .ant-pagination-prev,
+      .ant-pagination-next,
+      .ant-pagination-item {
+        min-width: 25px;
+        height: 25px;
+        margin: 0 5px;
+        line-height: 25px;
+        a {
+          color: #fff;
+          font-size: 18px;
+          line-height: 25px;
+          padding: 0;
+        }
+      }
+
+      .ant-pagination-item-active {
+        font-weight: 500;
+        background: #4e4f5e;
+        border-color: transparent;
+      }
+      .ant-pagination-item:hover{
+        font-weight: 500;
+        background: #4e4f5e;
+        border-color: transparent;
+      }
+      .ant-pagination-prev,
+      .ant-pagination-next {
+        background: #4e4f5e;
+
+        .ant-pagination-item-link {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+      .ant-pagination-disabled {
+        background: none;
+      }
+    }
+  }
+
+
+
+
+  .rarity-common-weapon-bg {
+    background-position: center;
+    background-size: 222px 179px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqhs1.png');
+
+  }
+
+  .rarity-uncommon-weapon-bg {
+    background-position: center;
+    background-size: 222px 179px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqqls.png');
+  }
+
+  .rarity-rare-weapon-bg {
+    background-position: center;
+    background-size: 222px 179px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqls.png');
+  }
+
+  .rarity-mythical-weapon-bg {
+    background-position: center;
+    background-size: 222px 179px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqzs.png');
+  }
+
+  .rarity-legendary-weapon-bg {
+    background-position: center;
+    background-size: 222px 179px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqfs.png');
+  }
+
+  .rarity-ancient-weapon-bg {
+    background-position: center;
+    background-size: 222px 179px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqhs.png');
+  }
+
+  .rarity-contraband-bg {
+    background-position: center;
+    background-size: 222px 179px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqjs.png');
+  }
+
+  .rarity-common-bg {
+    background-position: center;
+    background-size: 222px 179px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqhs1.png');
+  }
+
+  .rarity-rare-bg {
+    background-position: center;
+    background-size: 222px 179px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqls.png');
+  }
+
+  .rarity-mythical-bg {
+    background-position: center;
+    background-size: 222px 179px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqzs.png');
+  }
+
+  .rarity-legendary-bg {
+    background-position: center;
+    background-size: 222px 179px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqfs.png');
+  }
+
+  .rarity-ancient-bg {
+    background-position: center;
+    background-size: 222px 179px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqhs.png');
+  }
+
+
+}
+
+.backpack-steammodal-box {
+  .ant-modal-content {
+    background: transparent;
+    .ant-modal-close-icon{
+      color: #fff;
+    }
+    .ant-modal-body {
+      padding: 0px;
+      .ant-layout {
+        background-color: #1b1533;
+        border-radius: 10px;
+        height: 192px;
+        .backpack-steammodal-layout{
+          height: 100%;
+          &:extend(.column-center);
+          .backpack-steammodal-logo{
+            &:extend(.row-center);
+            >p{
+              color: #fff;
+
+            }
+            >img{
+              margin-right: 10px;
+            }
+          }
+          >p{
+            color: #fff;
+            margin-top: 5px;
+          }
+          .backpack-steam-btn{
+            cursor: pointer;
+            &:extend(.row-center);
+            background-image: url('../../assets/images/icon_grzxfz.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 100px;
+            height: 50px;
+            margin-top: 10px;
+            >p{
+              font-size: 16px;
+              font-weight: normal;
+              font-stretch: normal;
+              letter-spacing: 0px;
+              color: #ffffff;
+            }
+            &:extend(.row-center);
+          }
+        }
+      }
+    }
+  }
+}
+
+

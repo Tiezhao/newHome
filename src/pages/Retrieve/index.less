@@ -1,0 +1,577 @@
+@import "~@theme/style.less";
+@import "~@theme/bcolor.less";
+
+.retrieve-layout {
+  overflow: hidden;
+  .ant-layout-header {
+    padding: 0 10px;
+    background: #121022;
+    border-bottom: 1px solid #2d2a3c;
+    .ant-menu {
+      border-bottom: 0px;
+      background: transparent;
+
+      .ant-menu-inline {
+        border-bottom: none
+      }
+
+      .ant-menu-item {
+        &:active {
+          background: transparent
+        }
+
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #e3dcfb;
+
+        &:after {
+          border: 0px
+        }
+
+        &:hover {
+          font-size: 18px;
+          border-bottom: 1px solid #30fbf8;
+        }
+      }
+
+      .ant-menu-item-selected {
+        border-bottom: 1px solid #30fbf8;
+        font-family: SourceHanSansCN-Bold;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #30fbf8;
+
+        &:after {
+          border: 0px
+        }
+
+        &:hover {
+          font-size: 20px;
+        }
+      }
+    }
+    .retrieve-header-custom {
+      font-family: SourceHanSansCN-Regular;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 0px;
+      color: #30fbf8;
+    }
+  }
+
+  .retrieve-bind-email {
+    height: 50px;
+    width: 923px;
+    background-color: #161429;
+    margin: 10px auto;
+    &:extend(.row-start);
+    >div {
+      flex: 1
+    }
+
+    p {
+      font-family: 'SourceHanSansCN-Regular';
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 0px;
+      color: #e3dcfb;
+      margin-left: 0px;
+      line-height: 50px;
+      text-indent:20px;
+    }
+
+    a {
+      font-family: SourceHanSansCN-Regular;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 0px;
+      color: #30fbf8;
+      text-align: right;
+      margin-right: 20px;
+      line-height: 50px;
+    }
+  }
+
+  .retrieve-list-layout{
+    .retrieve-list-item{
+      padding: 10px;
+      height: 130px;
+      margin-bottom: 5px;
+      background-color: #161429;
+      border-radius: 3px;
+      &:extend(.row-align-center);
+      .retrieve-item-bg{
+        &:extend(.row-center);
+        height: 113px;
+        width: 140px;
+        >img{
+         height: 80%;
+        }
+      }
+      .retrieve-item-names{
+        width: 350px;
+        padding: 0px 50px 0px 50px;
+        &:extend(.column-aligh-center);
+        border-right: 1px solid #2b283a;
+        .retrieve-item-fname{
+          font-family: SourceHanSansCN-Bold;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 49px;
+          letter-spacing: 0px;
+          color: #ef2929;
+        }
+        .retrieve-item-twoname{
+          font-family: SourceHanSansCN-Regular;
+          font-size: 16px;
+          font-weight: normal;
+          letter-spacing: 0px;
+          color: #ffffff;
+        }
+        .retrieve-item-threename{
+          font-family: SourceHanSansCN-Regular;
+          font-size: 16px;
+          font-weight: normal;
+          letter-spacing: 0px;
+          color: #e3dcfb;
+        }
+      }
+      .retrieve-item-time{
+        width: 250px;
+        &:extend(.column-aligh-center);
+        border-right: 1px solid #2b283a;
+        p{
+          font-family: SourceHanSansCN-Regular;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 49px;
+          letter-spacing: 0px;
+          color: #e3dcfb;
+        }
+      }
+      .retrieve-item-btn{
+        cursor: pointer;
+        &:extend(.row-center);
+        background-image: url('../../assets/images/icon_grzxfz.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 110px;
+        height: 57px;
+        margin-left: 60px;
+        >p{
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #ffffff;
+        }
+        &:extend(.row-center);
+      }
+      .retrieve-item-state{
+        width: 200px;
+        &:extend(.column-center);
+        .retrieve-item-typetitle{
+          font-family: SourceHanSansCN-Medium;
+          font-size: 18px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 49px;
+          letter-spacing: 1px;
+          color: #ffffff;
+        }
+        .offer-btn{
+          width: 100%;
+          .retrieve-item-style{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#30fbf8 ;
+            margin: 0 auto;
+            >img{
+             width: 20px;
+             height: 15px;
+             margin-right: 10px;
+            }
+
+          }
+          .click-receive {
+            width: 74px;
+            height: 32px;
+            background-color: #fa2f85;
+            border-radius: 3px;
+            font-family: SourceHanSansCN-Regular;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #ffffff;
+            cursor: pointer;
+            text-align: center;
+            line-height: 32px;
+            margin:10px auto;
+          }
+        }
+          .click-receive {
+            width: 74px;
+            height: 32px;
+            background-color: #fa2f85;
+            border-radius: 3px;
+            font-family: SourceHanSansCN-Regular;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #ffffff;
+            cursor: pointer;
+            text-align: center;
+            line-height: 32px;
+            margin-right:10px;
+          }
+
+
+        .retrieve-item-types{
+          font-family: SourceHanSansCN-Bold;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 49px;
+          letter-spacing: 0px;
+          color: #30fbf8;
+        }
+        .retrieve-item-typef{
+          font-family: SourceHanSansCN-Bold;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 49px;
+          letter-spacing: 0px;
+          color: #fa2f85;
+        }
+        >Button{
+          background: transparent;
+          border: none;
+          color: #fff;
+        }
+      }
+
+    }
+
+  }
+  .retrieve-footer{
+    background: #001529;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+
+    .ant-pagination.mini {
+      .ant-pagination-prev,
+      .ant-pagination-next,
+      .ant-pagination-item {
+        min-width: 25px;
+        height: 25px;
+        margin: 0 5px;
+        line-height: 25px;
+        a {
+          color: #fff;
+          font-size: 18px;
+          line-height: 25px;
+          padding: 0;
+        }
+      }
+
+      .ant-pagination-item-active {
+        font-weight: 500;
+        background: #4e4f5e;
+        border-color: transparent;
+      }
+      .ant-pagination-item:hover{
+        font-weight: 500;
+        background: #4e4f5e;
+        border-color: transparent;
+      }
+      .ant-pagination-prev,
+      .ant-pagination-next {
+        background: #4e4f5e;
+
+        .ant-pagination-item-link {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+      .ant-pagination-disabled {
+        background: none;
+      }
+    }
+  }
+
+  .getback-box {
+    width: 923px;
+    margin: 0 auto;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 49px;
+    letter-spacing: 0px;
+    color: #e3dcfb;
+   .getback-out{
+     height: 520px;
+    >div {
+      display: flex;
+      height: 120px;
+      background-color: #161429;
+      border-radius: 3px;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+
+      >.left-img {
+        margin-left: 10px;
+
+        >.pic {
+          width: 130px;
+          border-radius: 3px;
+        }
+      }
+
+      >.introduce {
+        width: 159px;
+
+        >p {
+          width: 159px;
+          text-align: center;
+
+          >.color-text {
+            color: #ef2929;
+          }
+        }
+      }
+
+      >.time-box {
+        width: 250px;
+        border-left: 1px solid #2b283a;
+        border-right: 1px solid#2b283a;
+
+        >p {
+          text-align: center;
+        }
+      }
+
+      >.accept-btn {
+        width: 110px;
+        height: 44px;
+        line-height: 40px;
+        margin-right: 50px;
+        text-align: center;
+        background-image: url(../../assets/images/icon_kxan.png);
+        background-repeat: no-repeat;
+        background-size: 110px 44px;
+        cursor: pointer;
+      }
+    }
+  }
+  }
+  .historyback-box {
+    width: 944px;
+    margin: 0 auto;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 49px;
+    letter-spacing: 0px;
+    color: #e3dcfb;
+    margin-top: 30px;
+    .historyback-out{
+      height: 520px;
+    >div {
+      display: flex;
+      height: 130px;
+      background-color: #161429;
+      border-radius: 3px;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+
+      >.left-img {
+        margin-left: 10px;
+
+        >.pic {
+          width: 140px;
+          border-radius: 3px;
+        }
+      }
+
+      >.introduce {
+        width: 159px;
+
+        >p {
+          width: 159px;
+          text-align: center;
+
+          >.color-text {
+            color: #ef2929;
+          }
+        }
+      }
+
+      >.time-box {
+        width: 250px;
+        border-left: 1px solid #2b283a;
+        border-right: 1px solid#2b283a;
+
+        >p {
+          text-align: center;
+        }
+      }
+
+      >.status {
+        line-height: 40px;
+        margin-right: 50px;
+        text-align: center;
+      }
+    }
+   }
+  }
+  .page-con {
+    display: flex;
+    justify-content: center;
+
+    .ant-pagination.mini {
+      .ant-pagination-prev,
+      .ant-pagination-next,
+      .ant-pagination-item {
+        min-width: 25px;
+        height: 25px;
+        margin: 0 5px;
+        line-height: 25px;
+
+        a {
+          color: #fff;
+          font-size: 18px;
+          line-height: 25px;
+          padding: 0;
+        }
+      }
+
+      .ant-pagination-item-active {
+        font-weight: 500;
+        background: #4e4f5e;
+        border-color: transparent;
+      }
+      .ant-pagination-item:hover{
+        font-weight: 500;
+        background: #4e4f5e;
+        border-color: transparent;
+      }
+      .ant-pagination-prev,
+      .ant-pagination-next {
+        background: #4e4f5e;
+
+        .ant-pagination-item-link {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+      .ant-pagination-disabled {
+        background: none;
+      }
+    }
+  }
+
+  .rarity-common-weapon-bg {
+
+    background-size: 140px 113px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqhs1_history.png');
+
+  }
+
+  .rarity-uncommon-weapon-bg {
+
+    background-size: 140px 113px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqqls_history.png');
+  }
+
+  .rarity-rare-weapon-bg {
+
+    background-size: 140px 113px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqls_history.png');
+  }
+
+  .rarity-mythical-weapon-bg {
+
+    background-size: 140px 113px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqzs_history.png');
+  }
+
+  .rarity-legendary-weapon-bg {
+
+    background-size: 140px 113px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqfs_history.png');
+  }
+
+  .rarity-ancient-weapon-bg {
+
+    background-size: 140px 113px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqhs_history.png');
+  }
+
+  .rarity-contraband-bg {
+
+    background-size: 140px 113px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqjs_history.png');
+  }
+
+  .rarity-common-bg {
+
+    background-size: 140px 113px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqhs1_history.png');
+  }
+
+  .rarity-rare-bg {
+
+    background-size: 140px 113px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqls_history.png');
+  }
+
+  .rarity-mythical-bg {
+
+    background-size: 140px 113px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqzs_history.png');
+  }
+
+  .rarity-legendary-bg {
+
+    background-size: 140px 113px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqfs_history.png');
+  }
+
+  .rarity-ancient-bg {
+
+    background-size: 140px 113px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqhs_history.png');
+  }
+}
+

@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  s86hp:
+    image: registry.cn-shanghai.aliyuncs.com/gb-devteam/com-86skins/s86hp-pre:latest
+    networks:
+      - net-overlay-ec
+    ports:
+      - "28282:80"
+    # volumes:
+    #   - /data/var/s86hp-pre/logs:/var/logs
+    deploy:
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints:
+          # - node.labels.env == pre
+          - node.labels.s86hp == 1
+      replicas: 1
+networks:
+  net-overlay-ec:
+    external: true

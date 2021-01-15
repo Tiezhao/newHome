@@ -1,0 +1,381 @@
+.roll-detail-layout {
+  .tab-item {
+    width: 1390px;
+    margin: 0 auto;
+    padding: 0 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    .back-icon {
+      font-size: 16px;
+      color: #2ffaf8;
+      font-weight: 600;
+      transition: all 0.5s ease-out;
+    }
+
+    .back-text {
+      transition: all 0.5s ease-out;
+      margin-left: 6px;
+      font-size: 16px;
+      line-height: 60px;
+      color: #fff;
+    }
+
+    &:hover {
+      .back-icon {
+        color: #fff;
+        font-size: 22px;
+      }
+
+      .back-text {
+        color: #2ffaf8;
+      }
+    }
+  }
+
+  .roll-detail-header {
+    width: 1390px;
+    height: 190px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top: 2px solid #2ffaf8;
+    display: flex;
+    padding: 0 40px 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    position: relative;
+
+    .roll-detail-left {
+      display: flex;
+      justify-content: space-between;
+
+      .roll-weapon-bg {
+        width: 140px;
+        height: 138px;
+        border: solid 1px #2d2a3c;
+        background-size: 140px 138px;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        >img {
+          width: 124px;
+        }
+      }
+
+      .roll-room-dec {
+        margin-left: 20px;
+
+        >p {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    .join-btn {
+      width: 150px;
+      height: 40px;
+      background-image: url('../../assets/images/icon_kxan.png');
+      background-repeat: no-repeat;
+      background-size: 150px 40px;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+    }
+    .finish-btn {
+      width: 150px;
+      height: 40px;
+      background-image: url('../../assets/images/icon_kxbj.png');
+      background-repeat: no-repeat;
+      background-size: 150px 40px;
+      text-align: center;
+      line-height: 40px;
+    }
+    .status-title {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 40px;
+
+      >div {
+        width: 120px;
+        height: 30px;
+        margin: 0 auto;
+        background-image: url(../../assets/images/icon_rfzt.png);
+        text-align: center;
+        color: #141225;
+      }
+    }
+  }
+
+  .roll-detail-body {
+    width: 1390px;
+    background-color: #141225;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #fff;
+    padding: 37px 21px;
+
+    .roll-body-title {
+      width: 187px;
+      height: 52px;
+      margin: 0 auto;
+      background-image: url('../../assets/images/icon_bqbj.png');
+      background-repeat: no-repeat;
+      background-size: 187px 52px;
+      text-align: center;
+      line-height: 52px;
+    }
+
+    .roll-ground-box {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      margin-top: 44px;
+
+      .roll-card-box {
+        width: 261px;
+        height: 235px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 7px;
+        margin-bottom: 10px;
+        justify-content: center;
+
+        .roll-card-top {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+
+          .text-color {
+            color: #2ffaf8;
+            // width: 100%;
+            // text-align: right;
+          }
+        }
+
+        img {
+          width: 180px;
+          height: 110px;
+        }
+        .roll-card-buttom{
+          >span{
+            color:#b3b3b3;
+          }
+        }
+      }
+    }
+  }
+
+  .roll-detail-footer {
+    width: 1390px;
+    background-color: #141225;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #fff;
+    padding: 37px 21px;
+
+    .roll-foot-title {
+      width: 187px;
+      height: 52px;
+      margin: 0 auto;
+      background-image: url('../../assets/images/icon_bqbj.png');
+      background-repeat: no-repeat;
+      background-size: 187px 52px;
+      text-align: center;
+      line-height: 52px;
+    }
+
+    .roll-user-ground {
+      width: 1285px;
+      margin: 0 auto;
+      margin-top: 54px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .roll-user-info {
+        display: flex;
+        width: 140px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 2px;
+
+        .roll-user-border {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          border: solid 1px #ffffff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          >img {
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+          }
+
+        }
+
+        .roll-user-name {
+          margin-top: 10px;
+          width: 100px;
+          text-align: center;
+          word-break: break-all;
+          word-wrap: break-word;
+        }
+      }
+    }
+    .roll-none-data{
+      width: 100%;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+
+  .roll-detail-page {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    .ant-pagination.mini {
+
+      .ant-pagination-prev,
+      .ant-pagination-next,
+      .ant-pagination-item {
+        min-width: 25px;
+        height: 25px;
+        margin: 0 5px;
+        line-height: 25px;
+
+        a {
+          color: #fff;
+          font-size: 18px;
+          line-height: 25px;
+          padding: 0;
+        }
+      }
+
+      .ant-pagination-item-active {
+        font-weight: 500;
+        background: #4e4f5e;
+        border-color: transparent;
+      }
+
+      .ant-pagination-item:hover {
+        font-weight: 500;
+        background: #4e4f5e;
+        border-color: transparent;
+      }
+
+      .ant-pagination-prev,
+      .ant-pagination-next {
+        background: #4e4f5e;
+
+        .ant-pagination-item-link {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+
+      .ant-pagination-disabled {
+        background: none;
+      }
+    }
+  }
+
+  .rarity-common-weapon-bg {
+    background-position: center;
+    background-size: 261px 235px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqhs1.png');
+
+  }
+
+  .rarity-uncommon-weapon-bg {
+    background-position: center;
+    background-size: 261px 235px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqqls.png');
+  }
+
+  .rarity-rare-weapon-bg {
+    background-position: center;
+    background-size: 261px 235px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqls.png');
+  }
+
+  .rarity-mythical-weapon-bg {
+    background-position: center;
+    background-size: 261px 235px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqzs.png');
+  }
+
+  .rarity-legendary-weapon-bg {
+    background-position: center;
+    background-size: 261px 235px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqfs.png');
+  }
+
+  .rarity-ancient-weapon-bg {
+    background-position: center;
+    background-size: 261px 235px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqhs.png');
+  }
+
+  .rarity-contraband-bg {
+    background-position: center;
+    background-size: 261px 235px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqjs.png');
+  }
+
+  .rarity-common-bg {
+    background-position: center;
+    background-size: 261px 235px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqhs1.png');
+  }
+
+  .rarity-rare-bg {
+    background-position: center;
+    background-size: 261px 235px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqls.png');
+  }
+
+  .rarity-mythical-bg {
+    background-position: center;
+    background-size: 261px 235px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqzs.png');
+  }
+
+  .rarity-legendary-bg {
+    background-position: center;
+    background-size: 261px 235px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqfs.png');
+  }
+
+  .rarity-ancient-bg {
+    background-position: center;
+    background-size: 261px 235px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icon_wqhs.png');
+  }
+
+}

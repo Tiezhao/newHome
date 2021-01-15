@@ -1,0 +1,462 @@
+@import "~@theme/style.less";
+@import "~@theme/bcolor.less";
+.ant-spin-nested-loading .ant-spin-container {
+  width: 100% !important;
+  height: 100%;
+}
+
+
+.charge-layout{
+  .ant-layout{
+    background: transparent;
+    .charge-header{
+      margin-top: 20px;
+      margin-left: 10px;
+      >div{
+        display: flex;
+        justify-content: space-between;
+        font-family: SourceHanSansCN-Regular;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #ffffff;
+        >p{
+          font-family: SourceHanSansCN-Regular;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #ffffff;
+        }
+        .charge-service{
+          margin-right: 40px;
+          >span{
+            color: #2ad4d4;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .ant-menu {
+        background-color: transparent;
+        border: 0px;
+        margin-top: 10px;
+        padding: 10px;
+        margin-left: -27px;
+        .ant-menu-item{
+          border: 1px solid #936bfa;
+          .charge-pay-item{
+            padding: 10px;
+            width: 300px;
+            height: 70px;
+            &:extend(.row-center);
+            border-radius: 5px;
+            .charge-pay-icon{
+              width: 33px;
+              height: 33px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              margin-right: 10px;
+            }
+
+            >span{
+              font-family: SourceHanSansCN-Regular;
+              font-size: 14px;
+              font-weight: normal;
+              font-stretch: normal;
+              letter-spacing: 0px;
+              color: #ffffff;
+            }
+          }
+        }
+        .ant-menu-item-selected{
+          background: linear-gradient(#8922ab,#531cbd);
+        }
+
+      }
+
+
+    }
+    .charge-body{
+      .charge-box{
+        margin-top: 30px;
+        >p{
+          font-family: SourceHanSansCN-Regular;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #ffffff;
+          margin-left: 12px;
+        }
+        .charge-amounts {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 10px;
+          margin-left: 14px;
+          >Button {
+            margin: 0 40px 30px 0;
+            width: 204px;
+            height: 64px;
+            background-color: #161429;
+            border-radius: 2px;
+            border: solid 1px #39354c;
+            color: #fff;
+          }
+          .charge-select-btn {
+            background: linear-gradient(#8922ab,#531cbd);
+            border-style: solid;
+            border-width: 1px;
+            border-color: #936bfa;
+            color: #2ffaf8;
+          }
+          .charge-unselect-btn {
+            background:transparent;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #39354c;
+            color: #161429;
+          }
+          .ant-btn:disabled {
+            background: #464648;
+            color: #fff;
+            border-color: #444444;
+          }
+          .charge-amounts-use {
+            font-size: 11px;
+            color: #ffffff;
+          }
+          .charge-amounts-money{
+            font-family: SourceHanSansCN-Medium;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #ffffff;
+          }
+          .charge-amounts-use-big {
+            font-size: 11px;
+            color: #2ffaf8;
+          }
+          .charge-amounts-money-big{
+            font-family: SourceHanSansCN-Medium;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #2ffaf8;
+          }
+
+          .ant-btn:hover,
+          .ant-btn:focus,
+          .ant-btn:active {
+            background: #531cbd;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #936bfa;
+            color: #2ffaf8;
+            .charge-amounts-use{
+              color: #2ffaf8;
+            }
+            .charge-amounts-money{
+              color: #2ffaf8;
+            }
+            .charge-amounts-money-big{
+              color: #2ffaf8;
+            }
+            .charge-amounts-use{
+              color: #2ffaf8;
+            }
+            .charge-amounts-use-big{
+              color: #2ffaf8;
+            }
+          }
+        }
+      }
+
+      .charge-center-card {
+        height: 150px;
+        margin-bottom: 30px;
+        background-color: transparent;
+        border-bottom: 1px solid #39354d;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        .ant-card-body{
+          padding: 17px;
+        }
+        .charge-card-box {
+          &:extend(.row-between);
+          .charge-card-left {
+            >p {
+              font-family: AdobeHeitiStd-Regular;
+              font-size: 18px;
+              font-weight: normal;
+              font-stretch: normal;
+              letter-spacing: 0px;
+              color: #ffffff;
+            }
+            &:extend(.column-start);
+            .charge-preferential{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-top:10px;
+              >img{
+                width: 16px;
+                height: 11px;
+              }
+              >p{
+                font-family: SourceHanSansCN-Regular;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #2ad4d4;
+                margin-left:5px;
+              }
+            }
+            .charge-input-group {
+              &:extend(.row-start);
+
+              .ant-input {
+                color: #fff;
+                background: transparent;
+                margin-right: 20px;
+                border: solid 1px #4e5867;
+              }
+
+              .ant-input:focus {
+                border-color: #936bfa;
+                border-right-width: 0px;
+                box-shadow: none
+              }
+
+              .use-pay-btn {
+                .main-button(90px, 36px)
+              }
+
+              .use-dispay-btn {
+                .dis-button(90px, 36px)
+              }
+            }
+          }
+
+          .charge-card-right {
+            .charge-right-title {
+              font-family: SourceHanSansCN-Regular;
+              font-size: 16px;
+              font-weight: normal;
+              font-stretch: normal;
+              letter-spacing: 0px;
+              color: #ffffff;
+            }
+
+            .charge-right-des {
+              font-family: MicrosoftYaHei;
+              font-size: 14px;
+              font-weight: normal;
+              font-stretch: normal;
+              letter-spacing: 0px;
+              color: #28bd6a;
+            }
+          }
+        }
+
+
+
+        .charge-menu-center-card-title {
+          color: #fff;
+          font-size: 18px;
+
+        }
+
+        .charge-icon-money-size {
+          font-size: 20px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          color: #fff;
+          margin-right: 10px;
+        }
+
+        .charge-menu-center-card-menoy {
+          color: #fff;
+          font-size: 48px;
+
+        }
+
+      }
+      .card-odiv{
+        min-height: 90px;
+        display: flex;
+        flex-direction: column;
+        >div{
+          justify-content: space-around;
+          display: flex;
+          flex-direction: column;
+          height: 78px;
+          width: 300px;
+          >span{
+            font-size: 20px;
+            line-height: 28px;
+            color: #fff;
+          }
+          >input{
+            border: 0;
+            border-bottom: solid 1px #444444;
+            font-size: 20px;
+            line-height: 44px;
+            color: white;
+            &::-webkit-input-placeholder{
+              color: #969696;
+            }
+            &:focus{
+              outline: none;
+              border-bottom: solid 1px #936bfa;
+            }
+          }
+        }
+      }
+    }
+    .charge-footer-box {
+      margin-top: 30px;
+
+      .charge-footer-header {
+        margin-bottom: 50px;
+
+        >p {
+          padding-bottom: 10px;
+        }
+      }
+
+      .charge-footer-body {
+        &:extend(.row-end);
+
+        >Button {
+          margin: 0 30px 30px 0;
+          .main-button(200px, 50px);
+          background: #fa2f85;
+          border: none;
+
+        }
+      }
+      .charge-footer-header{
+        &:extend(.column-end);
+        margin-right: 30px;
+        .charge-pay-text {
+          font-family: SourceHanSansCN-Regular;
+          font-size: 14px;
+          font-weight: normal;
+          letter-spacing: 0px;
+          color: #ffffff;
+        }
+
+        .charge-pay-money {
+          font-family: SourceHanSansCN-Regular;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #ffffff;
+        }
+
+        .charge-pay-jb {
+          font-family: SourceHanSansCN-Regular;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #ffffff;
+        }
+      }
+    }
+    .charge-select-icon{
+      width: 13px;
+      height: 13px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+
+}
+.charge-modal-layout {
+
+  .ant-modal-content {
+    height: 400px;
+    background: #161429;
+  }
+
+  .ant-modal-close {
+    color: #fff;
+  }
+
+  .ant-modal-body {
+    padding: 0px;
+  }
+
+  .modal-layout {
+    .ant-layout-header {
+      background: #2b2c37;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      p {
+        color: white;
+        font-family: PingFangSC-Regular;
+        font-size: 18px;
+      }
+
+      i {
+        color: #fff;
+        font-size: 18px;
+      }
+
+      .notice-header-left {
+        &:extend(.row-start);
+
+        svg {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .modal-header {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+      >i {
+        color: #fff;
+        font-size: 18px;
+      }
+
+    }
+    .modal-body{
+      padding-top: 100px;
+      &:extend(.row-center);
+      >img{
+        width: 150px;
+        height: 150px;
+      }
+    }
+    .modal-footer{
+      padding-top: 30px;
+      &:extend(.column-center);
+      >p{
+        color: #fff;
+        font-size: 20px;
+      }
+      >Button{
+        .main-button(200px, 50px);
+         margin-top: 20px;
+      }
+    }
+
+  }
+
+}

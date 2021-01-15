@@ -1,0 +1,186 @@
+@import "~@theme/style.less";
+@import "~@theme/bcolor.less";
+
+.profile-layout {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  min-height: 300px;
+  padding: 20px;
+
+  .profile-info-layout {
+    flex: .4;
+    background-color: #161429;
+    &:extend(.column-center);
+    margin-right: 20px;
+
+    .info-img {
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-position-x: 5px;
+      background-image: url('../../assets/images/icon_tx.png');
+      width: 100px;
+      height: 100px;
+      &:extend(.row-center);
+    }
+
+    .info-name {
+      font-family: SourceHanSansCN-Regular;
+      font-size: 20px;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 0px;
+      color: #e3dcfb;
+    }
+
+    .info-balance {
+      font-family: SourceHanSansCN-Medium;
+      font-size: 26px;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 0px;
+      color: #30fbf8;
+    }
+
+    .charge-btn {
+      width: 90px;
+      height: 36px;
+      margin-top: 30px;
+      background-image: url('../../assets/images/icon_xgan.png');
+      text-align: center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 90px 36px;
+      line-height: 35px;
+      font-family: 'SourceHanSansCN-Bold' !important;
+      font-size: 16px;
+      color: #121022 !important;
+      cursor: pointer;
+    }
+
+    >Button {
+      width: 70px;
+      height: 34px;
+      margin-top: 30px;
+    }
+  }
+
+  .profile-link-layout {
+    flex: .55;
+
+    &:extend(.column-center);
+
+    .promote-link-layout {
+      background-color: #161429;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 140px;
+      margin-bottom: 20px;
+      width: 100%;
+      padding: 20px;
+
+      .link-input {
+        flex: .9;
+
+        >input {
+          background: transparent;
+          border: 0px;
+          border-bottom: 1px solid #2d2a3c;
+          color: #fff;
+          width: 100%;
+          font-family: 'SourceHanSansCN-Regular';
+          font-size: 13px;
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #30fbf8;
+        }
+
+
+      }
+
+      .link-input-form {
+        flex: 1;
+
+        .link-form {
+          input {
+            &:nth-child(1) {
+              border: 0px;
+              border-bottom: 1px solid #2d2a3c;
+              color: #fff;
+              width: 65%;
+              margin-left: 14px;
+
+              &:focus {
+                outline: none;
+                border-bottom: 1px solid #2d2a3c !important;
+                font-size: 14px;
+              }
+            }
+
+            &:nth-child(2) {
+              border: 0px;
+              margin-left: 60px;
+              color: #fff;
+            }
+          }
+
+        }
+      }
+
+      .link-info {
+        &:extend(.row-start);
+
+        svg {
+          color: #fff;
+          margin-right: 10px;
+          font-size: 20px;
+        }
+
+        >p {
+          font-family: SourceHanSansCN-Regular;
+          font-size: 18px;
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #e3dcfb;
+
+        }
+      }
+
+      .link-btn {
+        margin-top: 40px;
+        margin-right: 15px;
+        background-repeat: no-repeat;
+        width: 70px;
+        height: 34px;
+        background-image: url('../../assets/images/icon_grzxfz.png');
+        cursor: pointer;
+
+        >p {
+          font-family: SourceHanSansCN-Regular;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #ffffff;
+          text-align: center;
+          margin-top: 5px;
+          margin-right: 4px;
+        }
+      }
+    }
+
+    >p {
+
+      font-family: SourceHanSansCN-Regular;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 0px;
+      color: #e3dcfb;
+    }
+  }
+}
