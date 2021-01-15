@@ -15,7 +15,7 @@ VAR_PATH=/data/var/s86hp
 # Docker config
 # --------------------------------
 # repo
-DOCKER_DEPO=registry.cn-shanghai.aliyuncs.com/gb-devteam/com-86skins
+DOCKER_DEPO=registry-vpc.cn-shanghai.aliyuncs.com/gb-devteam/com-86skins
 DOCKER_ORG_NAME=
 DOCKER_IMAGE_NAME=s86hp
 DOCKER_TAG=latest # default value
