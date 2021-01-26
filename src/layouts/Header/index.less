@@ -9,7 +9,7 @@
     background-color: #1a1c24;
 
     a {
-      font-family: SourceHanSansCN-Regular;
+      font-family: 黑体;
       font-size: 14px;
       font-weight: normal;
       font-stretch: normal;
@@ -26,7 +26,7 @@
 
     .ant-menu-item {
       a {
-        font-family: SourceHanSansCN-Regular;
+        font-family: 黑体;
         font-size: 14px;
         font-weight: normal;
         font-stretch: normal;
@@ -37,7 +37,7 @@
 
     .ant-menu-item-only-child {
       background: #1a1c24;
-      font-family: SourceHanSansCN-Regular;
+      font-family: 黑体;
       font-size: 14px;
       font-weight: normal;
       font-stretch: normal;
@@ -115,12 +115,16 @@
           background-image: url('../../assets/images/icon_rollf.png');
         }
 
-        &:nth-child(10) {
-          background-image: url('../../assets/images/icon_tg.png');
-        }
+        // &:nth-child(10) {
+        //   background-image: url('../../assets/images/icon_tg.png');
+        // }
 
-        &:nth-child(12) {
-          background-image: url('../../assets/images/icon_rollf.png');
+        // &:nth-child(12) {
+        //   background-image: url('../../assets/images/icon_rollf.png');
+        // }
+
+        &:nth-child(10) {
+          background-image: url('../../assets/images/icon_hdjl.png');
         }
       }
 
@@ -133,7 +137,7 @@
           bottom: -20px;
           text-shadow: -1px -1px 0px 0px #2ffaf8, 1px 1px 0px 0px #fa2f85 !important;
           color: #fff;
-          font-family: SourceHanSansCN-Bold;
+          font-family: 黑体;
           font-size: 16px;
           font-weight: normal;
           font-stretch: normal;
@@ -180,7 +184,7 @@
 
         >p {
           margin-right: 10px;
-          font-family: SourceHanSansCN-Regular;
+          font-family: 黑体;
           font-size: 18px;
           font-weight: normal;
           line-height: 20px;
@@ -190,7 +194,7 @@
         }
 
         span {
-          font-family: SourceHanSansCN-Regular;
+          font-family: 黑体;
           font-size: 14px;
           font-weight: normal;
           font-stretch: normal;
@@ -218,7 +222,7 @@
       >Button {
         margin-right: 10px;
         .main-button(70px, 30px);
-        font-family: AdobeHeitiStd-Regular;
+        font-family: 黑体;
         font-size: 16px;
         font-weight: normal;
         font-stretch: normal;
@@ -262,7 +266,7 @@
 
         >p {
           margin-right: 10px;
-          font-family: AdobeHeitiStd-Regular;
+          font-family: 黑体r;
           font-size: 18px;
           font-weight: normal;
           font-stretch: normal;
@@ -287,14 +291,36 @@
 
       }
 
+      .left-reg{
+        background-color: rgb(103 45 182);
+        width: 27px;
+        height: 26px;
+        margin-right: -14px;
+        transform: rotate(45deg);
+        border: 1px solid rgb(103 45 182);
+        margin-left: 15px;
+      }
+
       .reg-btn {
         font-size: 16px;
         color: #fff;
-        width: 100px;
+        width: 70px;
         height: 38px;
         background: transparent;
-        font-family: 'SourceHanSansCN-Medium';
+        font-family: '黑体';
         border: transparent;
+        z-index: 1;
+        position: relative;
+        background-color: rgb(103 45 182);
+      }
+
+      .right-reg{
+        background-color: rgb(103 45 182);
+        width: 27px;
+        height: 26px;
+        margin-left: -15px;
+        transform: rotate(45deg);
+        border: 1px solid rgb(103 45 182);
       }
 
       .none_login_h_icon {

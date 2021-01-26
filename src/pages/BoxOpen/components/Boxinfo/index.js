@@ -1,6 +1,7 @@
 
 import { observer, inject } from 'mobx-react'
 import React, { Component } from 'react'
+
 import './index.less'
 import PropTypes from 'prop-types'
 import ReactAudioPlayer from 'react-audio-player';
@@ -13,6 +14,8 @@ import openvoice from '@assets/audio/openBox.mp3'
 import resultvoice from '@assets/audio/result.mp3'
 import dealErrCode from '@utils/dealErrCode'
 import history from '@router/history';
+import store from '../store/index'
+import sendAction from '../reducer/index'
 
 @inject('appStore') @observer class BoxInfo extends Component {
   constructor (props) {
@@ -33,6 +36,7 @@ import history from '@router/history';
   }
   componentDidMount () {
     this.handleAudioListen = this.handleAudioListen.bind(this);
+    
   }
   componentWillUnmount () {
     console.log('componentWillUnmount');
@@ -51,6 +55,7 @@ import history from '@router/history';
 
   // 打开箱子debounce
   handleOpenWeapon =  async () => {
+
     const {appStore} = this.props
     const {boxStore, modalStore} = appStore
 

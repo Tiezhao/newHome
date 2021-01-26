@@ -8,6 +8,7 @@ import _ from 'lodash';
 import methods from '@utils/methods'
 import { Button, Spin, message} from 'antd';
 import dealErrCode from '@utils/dealErrCode'
+import store from '../store/index' 
 function Lotterymodal ({ appStore }) {
 
 
@@ -129,7 +130,7 @@ function Lotterymodal ({ appStore }) {
           <Button loading={item.recycling} className='result-item-recycling'
             onClick={() => {
               handleTaskOrBack(item, 0)
-            }}>{`回收($${methods.MoneySlice(item.exchange_price, false)})`}</Button>
+            }}>{`回收(${methods.MoneySlice(item.exchange_price, false)})`}</Button>
 
           <Button disabled={item.recycling} className='result-item-tackback'
             onClick={() => {

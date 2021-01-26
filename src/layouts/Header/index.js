@@ -1,7 +1,7 @@
 
 import React, { useState, useContext } from 'react'
 import './index.less'
-import { Button, Col, Dropdown, Icon, Layout, Menu, Row } from 'antd'
+import { Button, Col, Dropdown, Icon, Layout, Menu, Row, Tooltip } from 'antd'
 import { useHistory, NavLink} from 'react-router-dom';
 import {observer, inject} from 'mobx-react'
 import PropTypes from 'prop-types'
@@ -27,6 +27,8 @@ function Header ({ appStore, centerStore }) {
     { title: 'CSGO开箱',  to: '/home/boxhome', key: 'boxhome'},
     { title: '斗箱大厅',  to: '/home/doubox', key: 'doubox'},
     { title: '推广',  to: '/home/center/promotion', key: 'promotion'},
+    { title: '我的背包',  to: '/home/center/backpack', key: 'backpack'},
+    { title: '充值',  to: '/home/center/charge', key: 'charge'}
     // { title: 'ROLL房',  to: '/home/roll', key: 'roll'},
   ];
 
@@ -65,6 +67,7 @@ function Header ({ appStore, centerStore }) {
   }
 
   const handleClick = (item) => {
+    // console.log('itemto:', item.to)
     const path = item.to
     const key = item.key
     if (path) {
@@ -98,6 +101,7 @@ function Header ({ appStore, centerStore }) {
         <div className='login-btn'   onClick={() => {
           handleModal(1)
         }}  />
+        <div className="left-reg"></div>
         <Button
           id='register'
           className='reg-btn' onClick={() => {
@@ -105,6 +109,7 @@ function Header ({ appStore, centerStore }) {
           }} type='primary'
         >注册
         </Button>
+        <div className="right-reg"></div>
       </div>
     </Col>
   )
@@ -150,7 +155,7 @@ function Header ({ appStore, centerStore }) {
   )
 
   const Nav = () => (
-    <Col span={15}>
+    <Col span={18}>
       <div className='layout-header-box'>
         <a>
           <img
@@ -164,11 +169,20 @@ function Header ({ appStore, centerStore }) {
           mode="horizontal"
         >
           {headerList.map((item, i) => (
-            <Menu.Item key={i} onClick={() => {handleClick(item)}}>
+            i == 4 ? <Menu.Item key={i} onClick={() => {handleClick(item)}}>
               <div className='header-menu-item'>
-                <p>{item.title}</p>
+                <p>
+                  <Tooltip placement="rightBottom" title="首冲100 送13" color="green">
+                    {item.title}
+                  </Tooltip>
+                </p>
               </div>
             </Menu.Item>
+              : <Menu.Item key={i} onClick={() => {handleClick(item)}}>
+                <div className='header-menu-item'>
+                  <p>{item.title}</p>
+                </div>
+              </Menu.Item>
           ))}
         </Menu>
       </div>

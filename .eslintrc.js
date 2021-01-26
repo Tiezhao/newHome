@@ -202,7 +202,7 @@ module.exports = {
     // 不允许使用三元操作符
     "no-ternary": 0,
     // 禁用行尾空格
-    "no-trailing-spaces": 2,
+    // "no-trailing-spaces": 2,
     // 禁止标识符中有悬空下划线_bar
     "no-underscore-dangle": 0,
     // 禁止可以在有更简单的可替代的表达式时使用三元操作符
