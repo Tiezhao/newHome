@@ -122,6 +122,7 @@ class BoxStore {
 
   @observable boxResultData = {
     allPrice: 0,
+    selectBet: 0,
     resultList: []
   }
 
@@ -279,6 +280,8 @@ class BoxStore {
   }
 
   @action setBoxResultData = (value) => {
+    // console.log('BoxResultData:', value)
+    // 重置boxResultData的值
     this.boxResultData = value
   }
 

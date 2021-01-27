@@ -14,8 +14,6 @@ import openvoice from '@assets/audio/openBox.mp3'
 import resultvoice from '@assets/audio/result.mp3'
 import dealErrCode from '@utils/dealErrCode'
 import history from '@router/history';
-import store from '../store/index'
-import sendAction from '../reducer/index'
 
 @inject('appStore') @observer class BoxInfo extends Component {
   constructor (props) {
@@ -74,8 +72,10 @@ import sendAction from '../reducer/index'
       })
       if (res.code === 0) {
         boxStore.getUserData()
+        // 开箱的数据（开几个、几个的总价格、开箱的结果）
         let resultData = {
           allPrice: 0,
+          selectBet: 0,
           resultList: []
         }
         let allPrice = 0
@@ -88,7 +88,9 @@ import sendAction from '../reducer/index'
               boxItems['user_item_id'] = res.data.user_item_ids[i]
               boxItems['recycling'] = false
               allPrice += boxItems.exchange_price
+              // 设置开箱的结果、开几次箱、几次箱的总价格
               resultData.resultList.push(boxItems)
+              resultData.selectBet = this.state.selectBet
               resultData.allPrice = allPrice
             }
           }
@@ -99,6 +101,8 @@ import sendAction from '../reducer/index'
 
         }
         appStore.refreshWalletInfo()
+        // console.log('resultData:', resultData)
+        // 重置boxStore中的boxResultData
         boxStore.setBoxResultData(resultData)
         boxStore.setBoxType(true)
         this.startMoreAnimation(resultData.resultList)

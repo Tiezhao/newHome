@@ -8,7 +8,6 @@ import _ from 'lodash';
 import methods from '@utils/methods'
 import { Button, Spin, message} from 'antd';
 import dealErrCode from '@utils/dealErrCode'
-import store from '../store/index' 
 function Lotterymodal ({ appStore }) {
 
 
@@ -23,6 +22,10 @@ function Lotterymodal ({ appStore }) {
     pushExchangePromise,
     getUserData
   } = boxStore
+
+  // 获取开箱的次数、总价格
+  const selectNum = boxResultData.selectBet;
+  const allPrice = boxResultData.allPrice;
 
 
   const handleAllBack = () => {
@@ -132,10 +135,10 @@ function Lotterymodal ({ appStore }) {
               handleTaskOrBack(item, 0)
             }}>{`回收(${methods.MoneySlice(item.exchange_price, false)})`}</Button>
 
-          <Button disabled={item.recycling} className='result-item-tackback'
+          {selectNum == 1 ? <Button disabled={item.recycling} className='result-item-tackback'
             onClick={() => {
               handleTaskOrBack(item, 1)
-            }}>放入背包</Button>
+            }}>放入背包</Button> : null}
         </div>
       </div>
     )
@@ -159,7 +162,7 @@ function Lotterymodal ({ appStore }) {
         <p>放入背包</p>
       </div>
       <div className='all-back'  onClick={taskAll}>
-        <p>全部回收</p>
+        <p>{`全部回收(${allPrice})`}</p>
       </div>
     </div>
 
@@ -171,7 +174,7 @@ function Lotterymodal ({ appStore }) {
     <div className='boxinfo-modal-layout'>
       <Spin spinning={exchangeload}>
         <Body />
-        <Footer />
+        {selectNum == 1 ? null : <Footer />}
       </Spin>
     </div>
 
